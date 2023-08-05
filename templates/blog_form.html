@@ -1,0 +1,17 @@
+{% extends "padre.html" %}
+
+{% load static %}
+
+{% block titulo %}
+<h1 class="mb-5">FORMULARIO DE BLOG</h1>
+{% endblock %}
+
+{% block contenidoQueCambia %}
+<h1>FORMULARIO DE BLOG!</h1>
+
+<form method="post">{% csrf_token %}
+    {{ form.as_p}}
+    <input class="btn btn-warning" type="submit" value="Editar">
+    <a class="btn btn-primary" href="{% url 'entradas_list' %}">Volver</a>
+</form>
+{% endblock %}

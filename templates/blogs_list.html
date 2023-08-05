@@ -1,0 +1,29 @@
+{% extends "padre.html" %}
+
+{% load static %}
+
+{% block titulo %}
+<h1 class="mb-5">BLOG LIST</h1>
+{% endblock %}
+
+{% block contenidoQueCambia %}
+<div style="background-color: #cbddf8" class="d-flex flex-column align-items-center py-4">
+<h2>Listado de BLogs</h2>
+<ul style="list-style: none;">
+
+    {% for blogs in object_list %}
+    <li style="background-color: #86a271" class="my-2 rounded">
+        {{ blog }}
+        <a class="btn btn-primary" href="{% url 'entradas_detalle' entradas.id %}">Ver</a>
+        <a class="btn btn-danger" href="{% url 'entradas_delete' entradas.id %}">Borrar</a>
+        <a class="btn btn-success" href="{% url 'entradas_update' entradas.id %}">Editar</a>
+    </li>
+    
+    {% endfor %}
+
+    <a class="btn btn-primary" href="{% url 'entradas_creacion' %}">Agregar Post</a>
+</ul>
+<h3>{{ mensaje }}</h3>
+</div>
+
+{% endblock %}

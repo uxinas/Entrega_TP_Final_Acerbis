@@ -1,0 +1,33 @@
+{% extends 'padre.html' %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+
+
+<div class="about_section layout_padding">
+    <div class="container">
+       <div class="row">
+          <div class="col-lg-10 col-sm-12">
+             <div class="about_img"><img src="{% static 'MAIN/images/img-8.png' %}"></div>
+             <div class="like_icon"><img src="{% static 'MAIN/images/like-icon.png' %}"></div>
+             <p class="post_text">Posteado por: Jorge</p>
+             <p class="post_text">Fecha 01/12/2022</p>
+             <h2 class="most_text">Fascinante lago nevado <br>Mendoza</h2>
+             <p class="lorem_text">
+                Una maravilla de la naturaleza, una espectral danza de colores y una tranquilidad feroz han
+                marcado esta experiencia que he vivido en mendoza!
+                
+             </p>
+             <div class="social_icon_main">
+                <div class="social_icon">
+                   <ul>
+                      <li><a href="#"><img src=""></a></li>
+                      <li><a href="#"><img src=""></a></li>
+                      <li><a href="#"><img src=""></a></li>
+                   </ul>
+                </div>
+             </div>
+          </div>
+
+{% endblock %}

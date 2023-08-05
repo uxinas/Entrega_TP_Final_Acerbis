@@ -1,0 +1,32 @@
+{% extends 'padre.html' %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+
+
+<div class="about_section layout_padding">
+    <div class="container">
+       <div class="row">
+          <div class="col-lg-10 col-sm-12">
+             <div class="about_img"><img src="{% static 'MAIN/images/img-10.png' %}"></div>
+             <div class="like_icon"><img src="{% static 'MAIN/images/like-icon.png' %}"></div>
+             <p class="post_text">Posteado por: Jorge</p>
+             <p class="post_text">Fecha 01/12/2022</p>
+             <h2 class="most_text">Caminata en Bariloche <br>Rio negro</h2>
+             <p class="lorem_text">No hay mejor lugar para una caminata
+                Cautivado por estos paisajes y la belleza de este lugar.
+                Sin lugar a dudas el mejor lugar para un trekking!
+             </p>
+             <div class="social_icon_main">
+                <div class="social_icon">
+                   <ul>
+                      <li><a href="https://www.facebook.com/Jorge.Acerbis"><img src=""></a></li>
+                      <li><a href="#"><img src=""></a></li>
+                      <li><a href="#"><img src=""></a></li>
+                   </ul>
+                </div>
+             </div>
+          </div>
+
+{% endblock %}
